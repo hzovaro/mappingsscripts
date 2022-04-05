@@ -1,0 +1,57 @@
+%
+%  FORMAT
+%  Title
+%  # entries [type] (I2,x,I2)
+%  Z  Offset/Scale
+%  .
+%  .
+%  .
+%
+%  Note:
+%  type = 0, or no type present (ie old files)
+%        negative/0.0 offsets/scales are logarithmic, ie 0.00 is no change
+%        positive offsets/scales are linear, ie 1.00 is no change
+%  type = 1:
+%        All offsets/scales are logarithmic, ie +0.00 is no change
+%  type = 2:
+%        All offsets/scales are linear , ie x1.00 is no change
+%  type = 3:
+%        All offsets/scales are log+12 , ie H = 12.00
+%
+%  Elements not included in the data file map.prefs will not be read
+%
+% Depletion file for Jenkins (2014) data with MAD interpolation
+% Written by python script v0.1 on 2020-06-03
+% Base Fe depletion guesstimated from 12 + log O/H = 9.4070
+Base Depletion: log10 Fe_gas/Fe_tot = -2.7980
+30  1
+ 1   0.00
+ 2   0.00
+ 3  -0.83
+ 4  -1.00
+ 5  -1.18
+ 6  -0.25
+ 7  -0.14
+ 8  -0.33
+ 9  -1.34
+10   0.00
+11  -1.02
+12  -1.71
+13  -1.71
+14  -1.86
+15  -1.06
+16   0.00
+17  -1.34
+18   0.00
+19  -1.23
+20  -4.02
+21  -1.70
+22  -4.02
+23  -4.69
+24  -2.91
+25  -2.14
+26  -2.80
+27  -3.00
+28  -3.08
+29  -1.62
+30  -0.82

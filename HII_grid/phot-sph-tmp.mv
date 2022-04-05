@@ -1,0 +1,41 @@
+yes   : change abund ***************************DUST & ABUNDANCES
+../../inputs/ADT_abund/abundances/NEBABUNDFNAME
+no    : no more changes
+no    : no offsets
+no    : Use Kappa electron distributions
+yes   : include dust
+yes   : change depletions
+../../inputs/ADT_abund/depletions/DEPFNAME
+no    : no more changes
+no    : allow grain destruction
+M     : MRN distribution
+yes   : Include PAH molecules?
+0.3   : fraction of Carbon Dust Depletion in PAHs
+Q     : PAH switch on QHDH < Value
+4e2   : PAH switch on Value
+no    : graphite grains to be cospatial with PAHs
+no    : Evaluate dust temperatures and IR flux?
+P6    : Photo. Abs. distance step, full cont ***************************START P6
+D     : Default ionisation values
+H     : Input SB data
+../../inputs/SBFNAME
+11
+X     : eXit with current source
+N     : Include cosmic ray heating
+s     : Spherical Geometry
+L     : Source by Luminosity
+T     : Total or Ionising Luminosity
+40    : bolometric source luminosity (log erg/s)
+B     : isoBaric, (const pressure)
+LPKVALUE :  Pressure regime (p/k, <10 as log)
+4     : log(Initial temperature)
+1     : filling factor (0<f<=1)
+U     : Give initial radius in terms of U(H)
+LOGUVALUE  :   U(H) at inner radius (< 100 as log)
+y     : Volume integration over the whole sphere? (y/n)
+E     : Equilibrium ionization balance.
+0.02  : Step value of the photon absorption fraction  *******
+A     : Ionisation bounded, 99% neutral **********
+B     : Standard + monitor element ionisation  
+1 2 8 16   : elements to monitor (H, He, O, S) >Name for run>>>>
+HII,SPH,zeta=NEBABUND,logU=LOGUVALUE,logPk=LPKVALUE,drrecmode=DRRECMODE
